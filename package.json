@@ -12,6 +12,7 @@
     "start": "next start",
     "lint": "eslint --cache --fix \"./**/*.{{j,t}s{x,},snap}\"",
     "prettier": "prettier --write .",
+    "test": "jest",
     "prepare": "husky install"
   },
   "engines": {
@@ -50,6 +51,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.0",
     "jest": "^28.1.1",
+    "jest-environment-jsdom": "^28.1.1",
     "jest-fail-on-console": "^2.4.2",
     "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",

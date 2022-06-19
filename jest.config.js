@@ -4,7 +4,6 @@ process.env.TZ = 'UTC'
 module.exports = {
   preset: 'ts-jest',
   testEnvironment: 'jest-environment-jsdom',
-  testResultsProcessor: './node_modules/jest-sonar-reporter',
   coverageReporters: ['json', 'html', 'text', 'lcov', 'cobertura'],
   collectCoverage: true,
   collectCoverageFrom: [
