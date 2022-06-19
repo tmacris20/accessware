@@ -1,0 +1,14 @@
+# Add files here to ignore them from prettier formatting
+
+dist
+/coverage
+*.yaml
+*.yml
+jscpd
+public
+.next
+seo_url
+storybook-static
+apps/developer-portal/build
+plop_templates/component
+apps/**/cypress/report/**/*
