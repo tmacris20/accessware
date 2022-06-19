@@ -1,5 +1,13 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# compiled output
+/dist
+/tmp
+/out-tsc
+tsconfig.tsbuildinfo
+.next
+storybook-static
+
 # dependencies
 /node_modules
 /.pnp
@@ -18,6 +26,22 @@
 # misc
 .DS_Store
 *.pem
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+*.log
+/typing
+/pa11y-reports
+pa11y-ci-results.json
+test-report.xml
+/junit
+/jscpd
+migrations.json
+/seo_url
+.eslintcache
+.history
+.yarn
 
 # debug
 npm-debug.log*
