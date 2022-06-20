@@ -1,0 +1,61 @@
+{
+  "name": "WTCBASE",
+  "short_name": "WTCBASE",
+  "description": "WTCBASE website",
+  "start_url": "/",
+  "display": "fullscreen",
+  "background_color": "#FFF",
+  "theme_color": "#FFF",
+  "gcm_sender_id": "",
+  "gcm_sender_id_comment": "Do not change the GCM Sender ID",
+  "icons": [
+    {
+      "src": "/accessware-static/icons/icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/accessware-static/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/accessware-static/icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/accessware-static/icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/accessware-static/icons/icon-168.png",
+      "sizes": "168x168",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/accessware-static/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/accessware-static/icons/icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/accessware-static/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
