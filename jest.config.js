@@ -1,10 +1,13 @@
-process.env.TZ = 'UTC'
-
-/** @type {import('@ts-jest/dist/types').InitialOptionsTsJest} */
-module.exports = {
+const nextJest = require('next/jest')
+const createJestConfig = nextJest({
+  dir: './',
+})
+const customJestConfig = {
   preset: 'ts-jest',
+  moduleDirectories: ['node_modules', '<rootDir>/'],
   testEnvironment: 'jest-environment-jsdom',
-  coverageReporters: ['json', 'html', 'text', 'lcov', 'cobertura'],
+  coverageReporters: ['json', 'html', 'text', 'lcov'],
+  setupFilesAfterEnv: ['./jest.setup.ts'],
   collectCoverage: true,
   collectCoverageFrom: [
     '{packages,apps}/**/*.{js,jsx,ts,tsx}',
@@ -13,10 +16,6 @@ module.exports = {
     '!**/.next/**',
     '!**/*.config.js',
   ],
-  transform: {
-    '^.+\\.(ts|tsx)?$': 'ts-jest',
-    '^.+\\.(js|jsx)$': 'babel-jest',
-  },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   coverageThreshold: {
     global: {
@@ -26,14 +25,12 @@ module.exports = {
       statements: 0,
     },
   },
-
   moduleNameMapper: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
       '<rootDir>/__mocks__/fileMock.js',
     '\\.(css|less|scss|sass)$': 'identity-obj-proxy',
     '\\.(svg)$': '<rootDir>/__mocks__/svgTransform.js',
   },
-  setupFilesAfterEnv: ['./jest.setup.ts'],
-  reporters: ['default'],
   testPathIgnorePatterns: ['cypress', 'cache'],
 }
+module.exports = createJestConfig(customJestConfig)

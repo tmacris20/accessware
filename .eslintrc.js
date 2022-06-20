@@ -1,10 +1,10 @@
-module.exports = {
+const customEslintConfig = {
   root: true,
   env: {
     browser: true,
     es2021: true,
     node: true,
-    // "jest/globals": true
+    jest: true,
   },
   globals: {
     JSX: true,
@@ -57,3 +57,5 @@ module.exports = {
     },
   },
 }
+
+module.exports = customEslintConfig
