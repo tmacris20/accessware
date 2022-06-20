@@ -29,7 +29,8 @@
     "isolatedModules": true,
     "incremental": true,
     "paths": {
-      "@components/*": ["packages/@sliide/components/*"]
+      "@components/*": ["packages/@sliide/components/*"],
+      "types/*": ["packages/@sliide/types/*"]
     }
   },
 
