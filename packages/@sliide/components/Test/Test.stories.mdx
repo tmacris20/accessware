@@ -1,0 +1,47 @@
+import { Meta, Story, Canvas, Props } from '@storybook/addon-docs/blocks'
+import { Test } from './Test.tsx'
+
+export const Template = (args) => <Test {...args} />
+
+<Meta title="Base Components/Test " component={Test} />
+
+# Test
+
+```javascript
+import { Test } from 'Test'
+```
+
+## Overview
+
+Make use of this component to test
+
+## Props
+
+<Props of={test} />
+
+## Styling Guide
+
+None
+
+## Usage Guide
+
+To be added
+
+## BBD Documentation
+
+To be added
+
+## Examples
+
+### Alert
+
+<Canvas>
+  <Story
+    name="Test"
+    args={{
+      testName: 'test',
+    }}
+  >
+    {Template.bind({})}
+  </Story>
+</Canvas>

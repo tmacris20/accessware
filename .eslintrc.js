@@ -19,6 +19,7 @@ const customEslintConfig = {
     'plugin:jest/recommended',
     'prettier',
     'plugin:cypress/recommended',
+    'plugin:storybook/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -36,7 +37,13 @@ const customEslintConfig = {
     '@typescript-eslint/no-use-before-define': ['error'],
     'jest/no-conditional-expect': 'off',
     'jest/no-try-expect': 'off',
-    'jest/no-large-snapshots': ['error', { maxSize: 20, inlineMaxSize: 6 }],
+    'jest/no-large-snapshots': [
+      'error',
+      {
+        maxSize: 20,
+        inlineMaxSize: 6,
+      },
+    ],
     semi: 'off',
     'comma-dangle': 'off',
     'no-console': ['error'],
@@ -57,5 +64,4 @@ const customEslintConfig = {
     },
   },
 }
-
 module.exports = customEslintConfig
