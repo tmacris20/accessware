@@ -30,6 +30,7 @@
     "incremental": true,
     "paths": {
       "@components/*": ["packages/@sliide/components/*"],
+      "@next-store/*": ["packages/@sliide/next-store/*"],
       "types/*": ["packages/@sliide/types/*"]
     }
   },

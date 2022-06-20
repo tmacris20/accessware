@@ -30,6 +30,7 @@
     "@babel/core": "^7.18.5",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
+    "@reduxjs/toolkit": "^1.8.2",
     "@storybook/addon-a11y": "^6.5.9",
     "@storybook/addon-actions": "^6.5.9",
     "@storybook/addon-essentials": "^6.5.9",
@@ -70,8 +71,11 @@
     "jest-environment-jsdom": "^28.1.1",
     "jest-fail-on-console": "^2.4.2",
     "lint-staged": "^13.0.2",
+    "next-redux-wrapper": "^7.0.5",
     "prettier": "^2.7.1",
+    "react-redux": "^8.0.2",
     "ts-jest": "^28.0.5",
+    "ts-mockery": "^1.2.0",
     "ts-node": "^10.8.1",
     "typescript": "4.7.4"
   }
