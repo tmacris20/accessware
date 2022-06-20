@@ -27,8 +27,12 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "isolatedModules": true,
-    "incremental": true
+    "incremental": true,
+    "paths": {
+      "@components/*": ["packages/@sliide/components/*"]
+    }
   },
+
   "ts-node": {
     "transpileOnly": true,
     "compiler": "typescript",
